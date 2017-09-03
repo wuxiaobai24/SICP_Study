@@ -1,0 +1,10 @@
+(define (max_sum a b c)
+	(cond ((and (> b a)
+		    (> c a))
+	       (+ b c))
+	      ((and (> a b)
+		    (> c b))
+	       (+ a c))
+	      (else (+ a b))))
+
+(max_sum 1 2 3)
